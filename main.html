@@ -5,11 +5,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CineMuse | Home |</title>
-  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" media="screen and (min-width: 1080px)" href="main.css">
+  <link rel="stylesheet" media="screen and (max-width: 1079px) and (min-width: 600px)" href="small.css">
+  <link rel="stylesheet" media="screen and (max-width: 600px)" href="mobile.css">
   <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/15423/15423288.png" type="icon" />
 </head>
 
 <body>
+  <script src="imp.js"></script>
   <ul>
     <a href="main.html">
       <div class="title">
@@ -17,12 +20,14 @@
         <h1><b>CineMuse</b></h1>
       </div>
     </a>
-    <div class="nav">
+    <img src="https://cdn-icons-png.flaticon.com/128/8106/8106985.png" id="nav">
+    <img src="https://cdn-icons-png.flaticon.com/128/9068/9068699.png" id="nav-close">
+    <div class="nav" id="nav-content">
       <li><a href="main.html" class="home">Home</a></li>
       <li><a href="#">Categories</a></li>
       <li><a href="#">Movies</a></li>
       <li><a href="#">Web Series</a></li>
-      <li><input type="text" placeholder="🔍Search"></li>
+      <li><input type="text" id="search" name="search" placeholder="🔍Search"></li>
     </div>
   </ul>
   <div class="carousel-container">
@@ -52,8 +57,8 @@
           <div class="slide-content">
             <h1>Maaman</h1>
             <p>2025</p>
-            <p>An uncle and nephew navigate their strained bond and family dynamics through challenging
-              circumstances that test their connection.</p>
+            <p>An uncle and nephew navigate their strained bond and family dynamics through challenging circumstances
+              that test their connection.</p>
             <button class="download-btn"><a href="movies/maaman.html">Download Now</a></button>
           </div>
         </div>
@@ -170,6 +175,97 @@
     <div class="arrow">
       <img src="https://cdn-icons-png.flaticon.com/128/8050/8050812.png" class="prev" id="prev">
       <img src="https://cdn-icons-png.flaticon.com/128/8050/8050813.png" class="next" id="next">
+    </div>
+  </div>
+  <div id="tablet-arrows1">
+    <div class="tablet">
+      <div class="tab-back">
+        <img alt="Retro" src="https://image.tmdb.org/t/p/w500/94lS6zIdNGozxiAgnet0BAbvMWV.jpg">
+      </div>
+      <div class="tab-details">
+        <h1>Retro</h1>
+        <p>2025</p>
+        <p>A gangster tries to avoid violence and lead a peaceful life after vowing to his wife.</p>
+        <a href="#"><button>Download Now</button></a>
+      </div>
+    </div>
+    <div class="tab-arrows">
+      <img id="tab-prev1" src="https://cdn-icons-png.flaticon.com/128/8050/8050812.png">
+      <img id="tab-next1" src="https://cdn-icons-png.flaticon.com/128/8050/8050813.png">
+    </div>
+  </div>
+  <div id="tablet-arrows2">
+    <div class="tablet">
+      <div class="tab-back">
+        <img alt="Tourist Family" src="https://image.tmdb.org/t/p/w500/rEffPihtdQXiXfRdfq7pPM5JDqa.jpg">
+      </div>
+      <div class="tab-details">
+        <h1>Tourist Family</h1>
+        <p>2025</p>
+        <p>A quirky Sri Lankan family seeking a fresh start in India transforms a disconnected neighborhood into a
+          vibrant community with their infectious love and kindness.</p>
+        <a href="movies/tourist-family.html"><button>Download Now</button></a>
+      </div>
+    </div>
+    <div class="tab-arrows">
+      <img id="tab-prev2" src="https://cdn-icons-png.flaticon.com/128/8050/8050812.png">
+      <img id="tab-next2" src="https://cdn-icons-png.flaticon.com/128/8050/8050813.png">
+    </div>
+  </div>
+  <div id="tablet-arrows3">
+    <div class="tablet">
+      <div class="tab-back">
+        <img alt="Maaman" src="https://image.tmdb.org/t/p/w500/a0BsRj9qQu8L2arBAHcbbfrVrB7.jpg">
+      </div>
+      <div class="tab-details">
+        <h1>Maaman</h1>
+        <p>2025</p>
+        <p>An uncle and nephew navigate their strained bond and family dynamics through challenging circumstances that
+          test their connection.</p>
+        <a href="movies/maaman.html"><button>Download Now</button></a>
+      </div>
+    </div>
+    <div class="tab-arrows">
+      <img id="tab-prev3" src="https://cdn-icons-png.flaticon.com/128/8050/8050812.png">
+      <img id="tab-next3" src="https://cdn-icons-png.flaticon.com/128/8050/8050813.png">
+    </div>
+  </div>
+  <div id="tablet-arrows4">
+    <div class="tablet">
+      <div class="tab-back">
+        <img alt="Dragon" src="https://image.tmdb.org/t/p/w500/dptvbLJGWcmAxh6ZxFK6IZcvZlu.jpg">
+      </div>
+      <div class="tab-details">
+        <h1>Dragon</h1>
+        <p>2025</p>
+        <p>After a devastating breakup, troubled student Ragavan abandons his studies and enters the
+          dangerous world of financial fraud, pursuing wealth and power while becoming entangled in
+          escalating deception.</p>
+        <a href="#"><button>Download Now</button></a>
+      </div>
+    </div>
+    <div class="tab-arrows">
+      <img id="tab-prev4" src="https://cdn-icons-png.flaticon.com/128/8050/8050812.png">
+      <img id="tab-next4" src="https://cdn-icons-png.flaticon.com/128/8050/8050813.png">
+    </div>
+  </div>
+  <div id="tablet-arrows5">
+    <div class="tablet">
+      <div class="tab-back">
+        <img alt="Hit 3" src="https://image.tmdb.org/t/p/w500/wT9tGyFol4RBwkjESXUWeBdnLJn.jpg">
+      </div>
+      <div class="tab-details">
+        <h1>Hit: The Third Case</h1>
+        <p>2025</p>
+        <p>Arjun Sarkaar, a top HIT officer from Visakhapatnam, is sent to Jammu and Kashmir to
+          investigate a series of brutal murders. As he pursues a group of elusive killers, the case
+          tests his skills and mental strength.</p>
+        <a href="#"><button>Download Now</button></a>
+      </div>
+    </div>
+    <div class="tab-arrows">
+      <img id="tab-prev5" src="https://cdn-icons-png.flaticon.com/128/8050/8050812.png">
+      <img id="tab-next5" src="https://cdn-icons-png.flaticon.com/128/8050/8050813.png">
     </div>
   </div>
   <div class="lists">
@@ -419,7 +515,5 @@
     </div>
   </div>
 </body>
-<script src="main.js">
-</script>
 
 </html>

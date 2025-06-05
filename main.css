@@ -4,6 +4,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Lusitana:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
 
+#tablet-arrows1{
+  display: none;
+}
+
+#tablet-arrows2{
+    display: none;
+}
+
+#tablet-arrows3{
+    display: none;
+}
+
+#tablet-arrows4{
+    display: none;
+}
+
+#tablet-arrows5{
+    display: none;
+}
+
 ::-webkit-scrollbar {
   width: 15px;
 }
@@ -25,6 +45,14 @@ body {
   padding: 0;
   min-height: 100vh;
   overflow-x: hidden;
+}
+
+#nav{
+  display: none;
+}
+
+#nav-close{
+  display: none;
 }
 
 a {
@@ -110,13 +138,17 @@ input:focus {
 
 #slides {
   display: flex;
-  transition: transform 0.5s ease-in-out;
   width: 100%;
 }
 
 .slide {
   min-width: 100%;
   box-sizing: border-box;
+  transition: transform 0.5s ease-in-out;
+  position: relative;
+}
+
+.slide:not(.active) {
   display: none;
 }
 
