@@ -19,7 +19,7 @@
 }
 
 @media screen and (max-width: 600px) {
-    ul{
+ul{
   list-style-type: none;
   padding: 0px;
 }
